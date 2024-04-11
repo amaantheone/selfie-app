@@ -7,7 +7,6 @@ export async function getVideo(){
     try {
         video.srcObject = avStream;
     } catch (error) {
-        console.log(error);
         video.src = window.URL.createObjectURL(avStream);
     }
     await video.play();
